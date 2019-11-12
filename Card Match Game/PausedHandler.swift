@@ -49,7 +49,7 @@ class PausedHandler {
         
         let rem = "\(experimentName)-\(id)"
         
-        pausedIDs.remove(at: pausedIDs.index(of: rem)!)
+        pausedIDs.remove(at: pausedIDs.firstIndex(of: rem)!)
         
         let upperBound = (((pausedIDs.count - 1) >= 0) ? (pausedIDs.count - 1) : 0)
         print(upperBound)
